@@ -22,8 +22,8 @@ const connection = mysql.createConnection({
     user: 'c237_021',
     password: 'c237021@2026!',
     database: 'c237_021_team5_userdb',
-    ssl:{
-        rejectUnauthorized:false
+    ssl: {
+        rejectUnauthorized: false
     }
 });
 
@@ -34,7 +34,6 @@ connection.connect((err) => {
     }
     console.log('Connected to MySQL database');
 });
-
 // Set up view engine
 app.set('view engine', 'ejs');
 //  enable static files
